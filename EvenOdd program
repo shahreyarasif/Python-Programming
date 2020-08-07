@@ -1,0 +1,6 @@
+x=input("Enter Any No")
+userinput=int(x)
+if(userinput%2==0):
+    print("Even")
+else:
+     print("Odd")
