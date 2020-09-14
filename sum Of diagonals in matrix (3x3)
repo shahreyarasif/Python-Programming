@@ -6,18 +6,14 @@ numbers=np.array([[1,2,3],
 def digonaldifference(number):
     sum1=0
     sum2=0
+    j=len(numbers)-1
     
-    for i in range(0,3):
-        for j in range(0,3):
-            if(i==j):
-                sum1+=numbers[i][j]
-            
-            if( (i,j)==(0,2) or (i,j)==(2,0) or (i,j)==(1,1)):
-                 sum2+=numbers[i][j]
-            
-                
-               
-            difference= sum1-sum2
+    for i in range(0,len(numbers)):
+                sum1+=numbers[i][i]
+                sum2+=numbers[i][j]
+                j=j-1
+        
+    difference= sum1-sum2
     
     return difference
                 
