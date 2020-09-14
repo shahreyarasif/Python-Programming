@@ -1,0 +1,15 @@
+schedule=np.array([
+  [ ' ' , 'Period 1','Period 2','Period 3','Period 4'],
+   ['Monday','PF','PF','OF','OF'],
+    ['Tuesday','Iict','IICT','Off','Off'],
+    ['Wenesday','Off','Off','Pis','Pis'],
+    ['Thursday','Vlm','Vlm','PF Lab','PF Lab'],
+    ['Friday','Off','Off','IICT  Lab','IIct Lab']
+    
+    
+    
+    
+    
+] )
+Table = pd.DataFrame( schedule )
+Table
